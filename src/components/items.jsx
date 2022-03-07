@@ -23,6 +23,7 @@ export function Items(){
 
     return (
         <div className="items">
+          <div>
            <span>Books: </span>
            <span className="totalBooks">{countBook}</span>
            {" "}
@@ -34,7 +35,8 @@ export function Items(){
            }}>
                -
            </button>
-            <br/>
+           </div>
+           <div>
            <span>Pens: </span>
            <span className="totalPens">{countPens}</span>
            {" "}
@@ -46,7 +48,8 @@ export function Items(){
            }}>
                -
            </button>
-           <br/>
+           </div>
+           <div>
            <span>Notebooks: </span>
            <span className="totalNotebooks">{countNotebooks}</span>
            
@@ -59,8 +62,9 @@ export function Items(){
            }}>
                -
            </button>
-           <br/>
-           <span>Inkpens: </span>
+        </div>
+        <div>
+            <span>Inkpens: </span>
            <span className="totalInkpens">{countInkpens}</span>
            {" "}
            <button className="addInkpen" onClick={()=>{countInkpensHandle(1)}}>+</button>
@@ -71,6 +75,7 @@ export function Items(){
            }}>
                -
            </button>
+           </div>
            <div className="total">total: {countBook+countPens+countNotebooks+countInkpens}</div>
 
         </div>
